@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width, 
+initial-scale=1.0">
+    <title>For my baby 💕</title>
+
+     <style>
+        body {
+            background-color: #fff0f5;
+            font-family: Georgia, 
+    serif;
+            text-align: center;
+            color: #75445a;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .card {
+            background-color: #fffafc;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 35px 20px;
+            border: 2px dashed #e8a8bd;
+            border-radius: 25px;
+            box-shadow: 0 5px 20px;
+    #e9bdcc;
+        }
+
+        .bow {
+            font-size: 55px;
+        }
+        h1{
+            color: #d66b91;
+            font-size: 35px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        button:hover {
+            background-color: #d66b91;
+        }
+        #surprise {
+            display: none;
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #fff0f5;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="bow">🎀</div>
+        <h1>Happy Birthday!</h1>
+        <p> 
+            cutieee💋
+        </p>
+
+        <p> 
+            A little corner of the 
+        internet made just for you👅
+         ew itna pyaar
+        </p>
+        <button
+     onclick="showSurprise()">
+     Click for a Surprise!
+    </button>
+        <div id="surprise">
+            <h2>Here's something to make your day more special! 🎁</h2>
+            <p>Happy birthday to the best sister ever!</p>
+            <p>i hope your day is filled with</p>
+            <p>dher saari KHUSHI.</p>
+            <p>love you loads🌹</p>
+        </div>
+        <h2>Our Little Memory Lane 🩷</h2>
+    <p>A few of my favourite memories with you ♡</p>
+
+    <div>
+        <img src="{{ url_for('static', filename='photos/photo1.jpeg') }}" width="200">
+        <img src="{{ url_for('static', filename='photos/photo2.jpeg') }}" width="200">
+
+        <video width="200" controls>
+            <source src="{{ url_for('static', filename='vdo1.mp4') }}" type="video/mp4">
+        </video>
+
+        <img src="{{ url_for('static', filename='photos/photo3.jpeg') }}" width="200">
+
+        <video width="200" controls>
+            <source src="{{ url_for('static', filename='vdo2.mp4') }}" type="video/mp4">
+        </video>
+
+        <img src="{{ url_for('static', filename='photos/photo4.jpeg') }}" width="200">
+    </div>
+        <script>
+            function showSurprise() {
+
+     document.getElementById('surprise').style.display = 'block';
+            }
+        </script>
+        </body>
+        </html>
